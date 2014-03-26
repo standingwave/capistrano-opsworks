@@ -6,11 +6,11 @@ require 'capistrano/ops_works/version'
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-ops_works"
   spec.version       = Capistrano::OpsWorks::VERSION
-  spec.authors       = ["Hubert Liu"]
-  spec.email         = ["hubert.c.liu@gmail.com"]
+  spec.authors       = ["Gabriel Williams"]
+  spec.email         = ["ummonai@gmail.com"]
   spec.description   = %q{AWS OpsWorks deployment with capistrano}
   spec.summary       = %q{Providing simple tasks to deploy to AWS OpsWorks using capistrano 3}
-  spec.homepage      = "https://github.com/hcliu/capistrano-opsworks"
+  spec.homepage      = "https://github.com/standingwave/capistrano-opsworks"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-  spec.add_dependency "aws"
+  spec.add_dependency "aws-sdk"
 end
