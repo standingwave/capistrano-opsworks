@@ -28,7 +28,7 @@ namespace :opsworks do
   end
 
   def get_git_log_info
-    `git log --pretty=format:'%h %ae %s' --date=short -n1`
+    `git log --pretty=format:'%h %ae %s' --date=short -n1`[0..249]
   end
 
   def start_deploy command_args={}
